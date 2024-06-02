@@ -25,4 +25,4 @@ jobs:
         run: npm run build
 
       - name: Deploy to Netlify
-        run: curl -X POST -d {} <NETLIFY_WEBHOOK_URL>
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/665c9ae97c1671d4c3c02c02
