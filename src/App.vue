@@ -4,7 +4,6 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
-    <h2>Je suis un titre que je viens d'ajouter</h2>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
