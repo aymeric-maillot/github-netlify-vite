@@ -1,28 +1,28 @@
-name: Deploy to Netlify
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build project
-        run: npm run build
-
-      - name: Deploy to Netlify
-        run: curl -X POST -d {} https://api.netlify.com/build_hooks/665c9ae97c1671d4c3c02c02
+#name: Deploy to Netlify
+#
+#on:
+#  push:
+#    branches:
+#      - main
+#
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v4
+#
+#      - name: Set up Node.js
+#        uses: actions/setup-node@v4
+#        with:
+#          node-version: '20'
+#
+#      - name: Install dependencies
+#        run: npm install
+#
+#      - name: Build project
+#        run: npm run build
+#
+#      - name: Deploy to Netlify
+#        run: curl -X POST -d {} https://api.netlify.com/build_hooks/665c9ae97c1671d4c3c02c02
