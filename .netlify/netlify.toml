@@ -1,0 +1,30 @@
+functionsDirectory = "/Users/aymericmaillot/netlify/functions"
+functionsDirectoryOrigin = "config-v1"
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/aymericmaillot/dist"
+publishOrigin = "config"
+command = "npm run build"
+commandOrigin = "config"
+functions = "/Users/aymericmaillot/netlify/functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
